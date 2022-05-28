@@ -68,7 +68,7 @@ public class _07CrossFire {
     }
 
     private static void bombRows(List<List<Integer>> matrix, int bombRow, int bombRadius, int bombCols) {
-        for (int row = bombRow - bombRadius; row < bombRow + bombRadius; row++) {
+        for (int row = bombRow - bombRadius; row <= bombRow + bombRadius; row++) {
             if (isValidRow(row, matrix, bombCols,bombRow)) {
                 matrix.get(row).remove(bombCols);
             }
